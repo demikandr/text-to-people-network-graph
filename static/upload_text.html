@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+</head>
+<body>
+    <h1>Upload text</h1>
+    <form action="/create_graph" method="POST">
+        <input type="file" id="myFile" name="filename"><br><br>
+        <input type="submit" value="Submit"
+        ><br>
+    </form>
+    <form action="/create_graph" method="POST">
+        <label for="fname">Title:</label><br>
+        <input type="text" id="title" name="title" placeholder="Special operation and piece" size="50"><br>
+        <label for="lname">Text:</label><br>
+        <textarea id="text" name="text" cols="50" rows="25" placeholder="Though Balashëv was used to imperial pomp, he was amazed at the luxury and magnificence of Napoleon’s court.
+        The Comte de Turenne showed him into a big reception room where many generals, gentlemen-in-waiting, and Polish magnates—several of whom Balashëv had seen at the court of the Emperor of Russia—were waiting. Duroc said that Napoleon would receive the Russian general before going for his ride.
+        After some minutes, the gentleman-in-waiting who was on duty came into the great reception room and, bowing politely, asked Balashëv to follow him."></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    After submission please wait 1-2 minutes for the graph to update, then refresh the page with the visualization.
+</body>
+</html>

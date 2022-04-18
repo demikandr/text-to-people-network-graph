@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="ForceGraph.js"></script>
+    <script src="graph_json.js"></script>
+    <script>
+        window.graphJSON_default = JSON.parse('{{ graph | tojson | safe}}');
+        window.graphJSON = window.graphJSON_default;
+</script>
+    <link rel="stylesheet" href="graph.css">
+
+</head>
+
+<body>
+    <div class='flex-container'>
+        <!-- TODO add list of people (not sure how it will play out with edge)-->
+        <div id='graph' class='graph'>
+        </div>
+        <div id='content' class='content'>
+            <h1> Content</h1>
+        </div>
+    </div>
+    <div id='graph_json' class='json'>
+        <form name="GraphInputForm">
+            <div class="flex-container">
+                <div>
+                    <label for="edge_input_json">Graph json:</label><br>
+                    <textarea cols="60" rows="20" id="edge_input_json" name="edge_input_json"></textarea>
+                </div>
+                <div>
+                    <label for="description_input_json">Descriptions json:</label><br>
+                    <textarea cols="60" rows="20" id="description_input_json"
+                        name="description_input_json"></textarea><br>
+                </div>
+            </div>
+            <input type="button" value="Submit" onclick="UpdateGraphData()">
+            <input type="button" value="Reset" onclick="ResetGraphData()">
+        </form>
+    </div>
+    <script>
+        Init();</script>
+</body>
+
+</html>

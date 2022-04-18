@@ -1,0 +1,14 @@
+16.02.2022 Learnings:
+  * Python on WASM is quite complicated:
+  * Python code is likely have to be combined in one file
+  * pytorch models should be converted to onnx and run accordingly
+  * GET http method is not suitable to send payload over 8kb
+  * POST http method doesn't support returning/loading a new html page,
+    but supports returning some payload.
+
+16.04.2022 Leanrnings:
+  * "Easy-css", e.g. https://watercss.kognise.dev, doesn't look good without extra modifications.
+
+
+  
+    
